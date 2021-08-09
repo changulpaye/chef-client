@@ -14,8 +14,8 @@ const SignUp = () => {
     <div className="signup-container">
       <img src={logo} className="logo-container" alt="logo" />
       <input className="user-input med-top-mar" placeholder="Username" />
-      <input className="user-input med-top-mar" placeholder="Password" />
-      <input className="user-input med-top-mar" placeholder="Confirm Password" />
+      <input type="password" className="user-input med-top-mar" placeholder="Password" />
+      <input type="password" className="user-input med-top-mar" placeholder="Confirm Password" />
       <button className="button" onClick={handleSignUp} > Sign Up </button>
     </div>
   );

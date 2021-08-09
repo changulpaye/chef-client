@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import add from "../../assets/images/add.png";
 import logo from "../../assets/images/logo.jpg";
-import recipes from "../../assets/data/recipes.json";
+import data from "../../assets/data/recipes.json";
 import Card from "../common/card";
 import "./recipe-list.css";
 import { useHistory } from "react-router-dom";
@@ -9,10 +9,25 @@ import { useHistory } from "react-router-dom";
 function RecipeList() {
   const history = useHistory();
 
+  const [recipes, setRecipes] = useState(data);
+  const [filteredRecipes, setFilteredRecipes] = useState(recipes);
+  const [searchValue, setSearchValue] = useState("");
+
+  /** Filtering Recipes based on user search */
+  const handleSearch = (e) => {
+    let query = e.currentTarget.value;
+    setSearchValue(query);
+    let filtered = recipes.filter((recipe) =>
+      recipe.title.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredRecipes(filtered);
+  };
+
+  /**Navigation to recipe details page */
   const handleRecipeSelection = (recipe) => {
     history.push("/recipe-details/" + recipe.id);
   };
-  
+
   return (
     <>
       <div className="search-container">
@@ -20,6 +35,8 @@ function RecipeList() {
         <input
           placeholder="Search here..."
           className="user-input med-right-mar"
+          value={searchValue}
+          onChange={handleSearch}
         />
         <img
           src={add}
@@ -29,7 +46,7 @@ function RecipeList() {
         />
       </div>
 
-      {recipes.map((recipe) => (
+      {filteredRecipes.map((recipe) => (
         <Card
           key={recipe.id}
           recipe={recipe}
