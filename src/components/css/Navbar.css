@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+  .navbar {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+  }
+  .navbar-li {
+    position: relative;
+    height: 100%;
+    width: 45%;
+  }
+  .navbar-li li {
+    list-style-type: none;
+    display: inline-block;
+    width: auto;
+    height: inherit;
+  }
+  .navbar-li li a {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1em;
+  }
+}
