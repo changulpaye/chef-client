@@ -35,7 +35,9 @@ const AddRecipe = () => {
         </div>
         <div className="row med-bottom-mar">
           <button className="button med-right-mar"> SAVE </button>
-          <button className="button-outline"> CANCEL </button>
+          <button className="button-outline" onClick={() => history.goBack()}>
+            CANCEL
+          </button>
         </div>
       </div>
     </>
