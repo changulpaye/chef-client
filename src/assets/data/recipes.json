@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "AVACADO TOAST",
+        "ingredients": [
+            "Avacado Smash",
+            "black Sesame",
+            "chilli flakes",
+            "Sea Salt",
+            "Cherry Tomato on sourdough bread"
+        ],
+        "instructions": [
+            "In a bowl, mix ground beef, egg, onion, bread crumbs, Worcestershire, garlic.",
+            "Lay burgers on an oiled barbecue grill over a solid bed of hot coals or high heat on a gas grill (you can hold your hand at grill level only 2 to 3 seconds)",
+            "Lay buns, cut side down, on grill and cook until lightly toasted, 30 seconds to 1 minute.",
+            "Spread mayonnaise and ketchup on bun bottoms. Add lettuce, tomato, burger, onion, and salt and pepper to taste. Set bun tops in place"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "CROISS SANDWICH",
+        "ingredients": [
+            "Avacado Smash",
+            "black Sesame",
+            "chilli flakes",
+            "Sea Salt",
+            "Cherry Tomato on sourdough bread"
+        ],
+        "instructions": [
+            "In a bowl, mix ground beef, egg, onion, bread crumbs, Worcestershire, garlic.",
+            "Lay burgers on an oiled barbecue grill over a solid bed of hot coals or high heat on a gas grill (you can hold your hand at grill level only 2 to 3 seconds)",
+            "Lay buns, cut side down, on grill and cook until lightly toasted, 30 seconds to 1 minute.",
+            "Spread mayonnaise and ketchup on bun bottoms. Add lettuce, tomato, burger, onion, and salt and pepper to taste. Set bun tops in place"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "GRILLED MAC AND CHEESE",
+        "ingredients": [
+            "Avacado Smash",
+            "black Sesame",
+            "chilli flakes",
+            "Sea Salt",
+            "Cherry Tomato on sourdough bread"
+        ],
+        "instructions": [
+            "In a bowl, mix ground beef, egg, onion, bread crumbs, Worcestershire, garlic.",
+            "Lay burgers on an oiled barbecue grill over a solid bed of hot coals or high heat on a gas grill (you can hold your hand at grill level only 2 to 3 seconds)",
+            "Lay buns, cut side down, on grill and cook until lightly toasted, 30 seconds to 1 minute.",
+            "Spread mayonnaise and ketchup on bun bottoms. Add lettuce, tomato, burger, onion, and salt and pepper to taste. Set bun tops in place"
+        ]
+    },
+    
+    {
+        "id": 4,
+        "title": "TACO OMELETT",
+        "ingredients": [
+            "Avacado Smash",
+            "black Sesame",
+            "chilli flakes",
+            "Sea Salt",
+            "Cherry Tomato on sourdough bread"
+        ],
+        "instructions": [
+            "In a bowl, mix ground beef, egg, onion, bread crumbs, Worcestershire, garlic.",
+            "Lay burgers on an oiled barbecue grill over a solid bed of hot coals or high heat on a gas grill (you can hold your hand at grill level only 2 to 3 seconds)",
+            "Lay buns, cut side down, on grill and cook until lightly toasted, 30 seconds to 1 minute.",
+            "Spread mayonnaise and ketchup on bun bottoms. Add lettuce, tomato, burger, onion, and salt and pepper to taste. Set bun tops in place"
+        ]
+    }
+    
+]

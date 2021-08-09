@@ -11,3 +11,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Common CSS for all components */
+
+.container {
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+  background-color: #f3f6f7;
+  height: 100vh;
+
+}
+
+.user-input {
+  width: 100%;
+  padding: 18px 20px;
+  display: inline-block;
+  border: 1px solid #81B861;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+
+.user-input:focus-visible {
+  border: 1px solid #4CAF50;
+  outline: none !important;
+  box-shadow: 0 0 10px #167e19;
+}
+
+/* Primary Green Button */
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-top: 16px;
+}
+
+/* Primary Green Button Press */
+.button:active {
+  background-color: #39803b; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #00000033;
+  transition: 0.3s;
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: white;
+}
+
+.card:active {
+  background-color:#e7ffd9;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.logo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+
+/********* SPACING CLASSES ****************/
+
+/* Small Margin */
+.small-top-mar{
+  margin-top: 6px;
+}
+.small-right-mar {
+  margin-right: 6px;
+}
+.small-left-mar{
+  margin-top: 6px;
+}
+.small-bottom-mar {
+  margin-right: 6px;
+}
+
+/* Mediumn Margin */
+.med-mar{
+  margin: 10px;
+}
+.med-top-mar{
+  margin-top: 10px;
+}
+.med-right-mar {
+  margin-right: 10px;
+}
+.med-left-mar{
+  margin-top: 10px;
+}
+.med-bottom-mar {
+  margin-right: 10px;
+}
+
+/* Large Margin */
+.large-mar{
+  margin: 15px;
+}
+.large-top-mar{
+  margin-top: 15px;
+}
+.large-right-mar {
+  margin-right: 15px;
+}
+.large-left-mar{
+  margin-top: 15px;
+}
+.large-bottom-mar {
+  margin-right: 15px;
+}
