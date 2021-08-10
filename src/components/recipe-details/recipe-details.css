@@ -80,3 +80,8 @@
     font-weight: 600;
     font-style: bold;
 }
+.comment-row {
+    display: flex;
+    justify-content: space-between;
+    
+}

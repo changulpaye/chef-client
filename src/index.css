@@ -79,6 +79,30 @@ code {
   min-width: 200px;
   margin-top: 16px;
 }
+.button-small {
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-medium {
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+.button-medium-outline {
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  background-color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
 
 .button-outline:hover {
   border: 1px solid #4CAF50;
