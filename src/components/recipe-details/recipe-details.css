@@ -9,10 +9,74 @@
 
 .detail-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    color:#4CAF50;
-    font-size: 26px;
-    font-weight: bolder;
-    height: 80vh;
+    color: #4CAF50;
+    width: 94%;
+    margin-top: 20px;
+
+}
+
+.recipe-label {
+    position: absolute;
+    border: 1px solid #4CAF50;
+    border-radius: 17px;
+    width: 100px;
+    height: 24px;
+    left: 10px;
+    top: -12px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    background-color: #ffffff
+}
+
+.detail-title {
+    /* width: 100%; */
+    padding: 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    margin: 10px 0px;
+    font-weight: 700;
+    position: relative;
+}
+.detail-list {
+    color: #165318;
+}
+.detail-ingredients {
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    margin: 24px 0px;
+    position: relative;
+}
+.detail-instructions {
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    margin-top: 24px;
+    position: relative;
+}
+.comment-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.divider {
+    margin: 12px -12px;
+    border-top: 1px solid #e0d2d2;
+}
+
+.comment-section {
+    color: rgb(82, 80, 80)
+
+}
+.comment-text {
+    font-weight: 400;
+    font-style: italic;
+}
+.comment-user {
+    font-weight: 600;
+    font-style: bold;
 }

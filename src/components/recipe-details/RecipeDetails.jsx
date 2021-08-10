@@ -1,10 +1,23 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
 import backArrow from "../../assets/images/back-arrow.png";
+import data from "../../assets/data/recipes.json";
 import "./recipe-details.css";
 
 export default function RecipeDetails() {
   const history = useHistory();
+  const { id } = useParams();
+  const [recipe, setRecipe] = useState({
+    title: "",
+    ingredients: [],
+    instructions: [],
+    comments: [],
+  });
+
+  useEffect(() => {
+    const i = data.findIndex((d) => d.id === +id);
+    if (i !== -1) setRecipe(data[i]);
+  }, [recipe, id]);
 
   return (
     <>
@@ -17,8 +30,53 @@ export default function RecipeDetails() {
         />
         <div className="header">Recipe Details </div>
       </div>
-      <div className="detail-container" >
-          Under Development
+      <div className="detail-container">
+        <div className="card large-mar">
+          <div className="detail-title">
+            <span className="recipe-label" htmlFor="">
+              Recipe name
+            </span>
+            {recipe.title}
+          </div>
+
+          <div className="detail-ingredients">
+            <span className="recipe-label" htmlFor="">
+              Ingredients
+            </span>
+            <ul className="detail-list">
+              {recipe.ingredients.map((ing, i) => (
+                <li key={i}> {ing} </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="detail-instructions">
+            <span className="recipe-label" htmlFor="">
+              Directions
+            </span>
+
+            <ol className="detail-list">
+              {recipe.instructions.map((ing, i) => (
+                <li key={i}> {ing} </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+        <div className="card large-bottom-mar">
+          <div className="comment-title">Comments </div>
+          <div className="divider"></div>
+
+          <div className="comment-section">
+            {recipe.comments.map((c) => (
+              <div>
+                <span className="comment-text">&ldquo;{c.comment}&rdquo;</span>
+                <span className="comment-user"> - {c.commentedBy} </span>
+                <br />
+                <br />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
