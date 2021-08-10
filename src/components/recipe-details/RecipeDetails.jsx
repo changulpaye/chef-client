@@ -99,7 +99,7 @@ export default function RecipeDetails() {
 
           <div className="comment-section">
             {recipe.comments.map((c) => (
-              <div>
+              <div key={c.id}>
                 <span className="comment-text">&ldquo;{c.comment}&rdquo;</span>
                 <span className="comment-user"> - {c.commentedBy} </span>
                 <br />

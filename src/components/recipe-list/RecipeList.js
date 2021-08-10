@@ -6,6 +6,7 @@ import Card from "../common/card";
 import "./recipe-list.css";
 import { useHistory } from "react-router-dom";
 
+
 function RecipeList() {
   const history = useHistory();
 
@@ -34,7 +35,7 @@ function RecipeList() {
         <img src={logo} className="back-arrow" alt="back arrow" />
         <input
           placeholder="Search here..."
-          className="user-input med-right-mar"
+          className="search-input med-right-mar"
           value={searchValue}
           onChange={handleSearch}
         />

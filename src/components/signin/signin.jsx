@@ -12,10 +12,12 @@ const SignIn = () => {
   
   return (
     <div className="signup-container">
-      <img src={logo} alt="logo" />
+      <img src={logo} className="logo-container" alt="logo" />
       <input className="user-input med-top-mar" placeholder="Username" />
       <input className="user-input med-top-mar" placeholder="Password" />
-      <button className="button" onClick={handleSignIn} > Sign In </button>
+      <button className="button" onClick={handleSignIn}>
+        Sign In
+      </button>
     </div>
   );
 };

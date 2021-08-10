@@ -1,6 +1,6 @@
 .add-recipe-container {
     width: 100%;
-    height: 60px;
+    height: 40px;
     display: flex;
     align-items: center;
     padding: 10px 0px;
@@ -13,8 +13,6 @@
     align-items: center;
     color: #4CAF50;
     width: 94%;
-    margin-top: 20px;
-
 }
 
 .recipe-label {
