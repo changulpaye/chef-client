@@ -34,8 +34,11 @@ const AddRecipe = () => {
           ></textarea>
         </div>
         <div className="row med-bottom-mar">
-          <button className="button med-right-mar"> SAVE </button>
-          <button className="button-outline" onClick={() => history.goBack()}>
+          <button className="button-medium med-right-mar"> SAVE </button>
+          <button
+            className="button-medium-outline"
+            onClick={() => history.goBack()}
+          >
             CANCEL
           </button>
         </div>

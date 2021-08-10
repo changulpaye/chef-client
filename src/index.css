@@ -90,6 +90,7 @@ code {
   color: white;
   cursor: pointer;
   padding: 8px;
+  min-width: 100px;
   border-radius: 4px;
 }
 .button-medium-outline {
@@ -98,6 +99,7 @@ code {
   background-color: white;
   cursor: pointer;
   padding: 8px;
+  min-width: 100px;
   border-radius: 4px;
 }
 
