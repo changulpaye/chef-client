@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Route, Switch } from "react-router";
 import { Redirect } from "react-router-dom";
 import AddRecipe from "./components/add-recipe/AddRecipe";
